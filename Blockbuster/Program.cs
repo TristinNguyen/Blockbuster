@@ -15,7 +15,7 @@ namespace BlockbusterAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<SakilaDbContext>(options =>
-                options.UseMySQL("your_connection_string_here"));
+                options.UseMySQL("Server=localhost;Database=sakila;Uid=username;Pwd=password;"));
 
             services.AddControllers();
         }
